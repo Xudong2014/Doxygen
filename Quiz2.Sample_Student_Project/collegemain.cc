@@ -18,7 +18,16 @@
 #include "course.h"
 #include "node.h"
 #include "college.h"
-
+/*! \file
+ *  \brief main entry point for doxygen
+ *
+ *  This file contains main()
+ */
+/*! Default main. The idea of search college course management,
+ *  first you need a mune to make a choice, thaen run the function
+ *  you need write several function to run this search like meuw() function
+ *  as instance.
+ */
 using namespace std;
 
 // This function displays the menu and returns the user's choice

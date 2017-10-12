@@ -8,6 +8,12 @@
 #include<iostream>
 #include<iomanip>
 #include<string>
+/// course function to set some basic information like grade, number and so on.
+/**
+* The course function. It includes input, output 
+* read from an input,the grade rule, and credit hours
+* author Xudong Yuan
+*/
 using namespace std;
 
 course::course(){
@@ -15,6 +21,10 @@ course::course(){
 }
 
 void course::input(std::istream& ins){
+/**
+* The basic information.
+* input course number, grade received, and credit hours.
+*/
     if(ins == cin){
 	cout<<"Course Number: ";
 	if(ins.peek() == '\n') ins.ignore();
@@ -54,6 +64,10 @@ void course::output(std::ostream& outs)const{
 
 
 double course::get_number_grade()const{
+/**
+* The grade information.
+* how many points for which grade number.
+*/
     if(grade == "A") return 4.0;
     if(grade == "A-") return 3.667;
     if(grade == "B+") return 3.333;
@@ -70,6 +84,10 @@ double course::get_number_grade()const{
 }
 
 void course::set_course(std::string num, std::string grad, double hrs){
+/**
+* The basic declare.
+* declare course number, grade received, and credit hours.
+*/
 	course_number = num;
 	grade = grad;
 	hours = hrs;

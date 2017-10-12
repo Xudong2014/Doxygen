@@ -9,6 +9,14 @@
 #include<iostream>
 #include<iomanip>
 #include<string>
+/**
+   CS-17
+   college.cc
+   purpose: make file work with college
+
+   @author Matthew Aberegg
+   @version 0.1
+ */
 using namespace std;
 
 College::College(std::string s){
